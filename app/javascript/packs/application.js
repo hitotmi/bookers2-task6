@@ -13,7 +13,7 @@ import "../stylesheets/application"
 import '@fortawesome/fontawesome-free/js/all';
 import 'jquery'
 import "script.js"
-
+import "skippr.min.js"
 
 Rails.start()
 Turbolinks.start()

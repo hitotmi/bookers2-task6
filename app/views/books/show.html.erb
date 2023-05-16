@@ -38,7 +38,7 @@
         </tr>
       </table>
 
-      <div>
+      <div id="slider">
         <% if @book.images.attached? %>
           <% @book.images.each do |image| %>
             <%= image_tag image, size:'200x200' %>
