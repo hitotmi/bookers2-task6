@@ -37,10 +37,20 @@
           </td>
         </tr>
       </table>
-    
+
+      <div>
+        <% if @book.images.attached? %>
+          <% @book.images.each do |image| %>
+            <%= image_tag image, size:'200x200' %>
+          <% end %>
+        <% end %>
+      </div>
+
+
+
       <div id="comment-area">
         <%= render "book_comments/comment",book: @book,book_comment: @book_comment %></div>
-      </div> 
+      </div>
     </div>
   </div>
 </div>
